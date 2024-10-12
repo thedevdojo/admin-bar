@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\File;
 
 class AdminBarPlugin extends Plugin
 {
-    protected $name = 'AdminBar';
+    protected $name = 'Admin Bar';
 
     protected $description = 'An admin bar to quickly jump to documentation and different sections in your app.';
 
