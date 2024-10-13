@@ -21,7 +21,7 @@
                 </button>
             </div>
 
-            <button x-on:click="iframeURL='https://devdojo.test/wave/docs/getting-started'; if(section=='docs' && iframeOpen){ iframeOpen=false; } else { iframeOpen=true; } section='docs';" :class="{ 'text-white dark:text-gray-950' : section == 'docs', 'dark:text-gray-950/60 dark:hover:text-gray-950 text-white/70 hover:text-white' : section != 'docs' }" class="relative group">
+            <button x-on:click="iframeURL='https://devdojo.com/wave/docs/getting-started'; if(section=='docs' && iframeOpen){ iframeOpen=false; } else { iframeOpen=true; } section='docs';" :class="{ 'text-white dark:text-gray-950' : section == 'docs', 'dark:text-gray-950/60 dark:hover:text-gray-950 text-white/70 hover:text-white' : section != 'docs' }" class="relative group">
                 <span class="relative z-20 flex items-center justify-center w-8 h-8 dark:group-hover:bg-gradient-to-r dark:group-hover:from-gray-50 dark:group-hover:to-white group-hover:bg-gradient-to-r from-gray-950 to-gray-800">
                     <svg class="w-[18px] h-[18px] group-hover:translate-x-0.5 ease-out duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path fill="none" d="M0 0h256v256H0z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M112 112h64M112 144h64"/><rect width="176" height="176" x="40" y="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" rx="8"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M80 40v176"/></svg>
                 </span>
