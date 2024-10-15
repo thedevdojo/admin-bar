@@ -19,7 +19,9 @@ class AdminBarPlugin extends Plugin
 
     public function boot()
     {
-        $this->app->router->pushMiddlewareToGroup('web', \Wave\Plugins\AdminBar\Http\Middleware\InjectBarMiddleware::class);
+        if (!app()->runningInConsole() && !app()->environment('testing')) {
+            $this->app->router->pushMiddlewareToGroup('web', \Wave\Plugins\AdminBar\Http\Middleware\InjectBarMiddleware::class);
+        }
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'admin-bar');
     }
 
